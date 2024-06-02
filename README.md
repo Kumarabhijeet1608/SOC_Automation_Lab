@@ -65,8 +65,8 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
     ```bash
        apt-get update && apt-get upgrade -y  
 2. **Wazuh Installation**: Follow the provided instructions.
-   ```bash
-      Specifications
+   - Specification
+    ```bash
       RAM: 8GB+
       HDD: 50GB+
       OS: Ubuntu 22.04 LTS
@@ -77,7 +77,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
       Extract Wazuh Credentials
       sudo tar -xvf wazuh-install-files.tar
    
-3. **Save Credentials**: Record the username and password for the web interface.
+4. **Save Credentials**: Record the username and password for the web interface.
 
 
 
@@ -86,15 +86,14 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
     ```bash
        apt-get update && apt-get upgrade -y  
 2. **The Hive Installation**: Follow the provided instructions.
-   ```bash
-      Specifications
+   - Specifications
+    ```bash
       RAM: 8GB+ (Recommend 16 GB)
       HDD: 50+ GB
       OS: Ubuntu 22.04 LTS
-
-      Installing TheHive 5
 2. Dependences
    ```bash
+      Installing TheHive 5
       apt install wget gnupg apt-transport-https git ca-certificates ca-certificates-java curl  software-properties-common python3-pip lsb-release
 3. Install Java
    ```bash
