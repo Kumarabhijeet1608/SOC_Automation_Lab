@@ -222,7 +222,6 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 ### Download Mimikatz
    1. Download Mimikatz on your Windows machine using CLI with admin privileges.
       - [Mimikatz](https://github.com/gentilkiwi/mimikatz/releases/tag/2.2.0-20220919)
-      22nd img
 
         
 ### Generating and Ingesting Telemetry Data
@@ -245,18 +244,19 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 ### Update Wazuh Filebeat Configuration
 
   1.  Make changes in the Wazuh Filebeat configuration.
-    ```bash
-      `nano /etc/filebeat/filebeat.yml`
-  2. There you need to set `archives`: `enabled`: `true`     
+   ```bash
+       nano /etc/filebeat/filebeat.yml
+```
+  3. There you need to set `archives`: `enabled`: `true`     
       
-  3.  Restart Filebeat:
+  4.  Restart Filebeat:
       ```bash
          sudo systemctl restart filebeat
       ```
-  4. Go to the Wazuh dashboard and create an index Pattern.
+  5. Go to the Wazuh dashboard and create an index Pattern.
    ![index_pattern](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/24.png)
       
-  5. Create custom rules by editing the `local_rules.xml` file.
+  6. Create custom rules by editing the `local_rules.xml` file.
 ```     
 <!-- Local rules -->
 
