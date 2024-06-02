@@ -160,6 +160,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
    sudo systemctl start cassandra.service
    sudo systemctl status cassandra.service
 
+ ![Cassandra](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/10.png)
 
 
 ### Elasticsearch Configuration
