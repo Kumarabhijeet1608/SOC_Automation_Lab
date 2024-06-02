@@ -64,8 +64,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 1. **Upgrade and Update**: Ensure your system is up to date via CLI.
     ```bash
        apt-get update && apt-get upgrade -y  
-2. **Wazuh Installation**: Follow the provided instructions.
-   - Specification
+2. **Wazuh Specification**: Follow the provided instructions.
     ```bash
       RAM: 8GB+
       HDD: 50GB+
@@ -85,8 +84,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 1. **Upgrade and Update**: Ensure your system is up to date via CLI.
     ```bash
        apt-get update && apt-get upgrade -y  
-2. **The Hive Installation**: Follow the provided instructions.
-   - Specifications
+2. **The Hive Specifications**: Follow the provided instructions.
     ```bash
       RAM: 8GB+ (Recommend 16 GB)
       HDD: 50+ GB
