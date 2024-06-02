@@ -125,14 +125,14 @@ Check Service Status:
 ```
 2. Save the Wazuh API user and password.
 
-##step-4-deploying-a-new-agent
+## Step 4: Deploying a New Agent
 
 ### Deploying a New Agent
   1. Deploy Agent from Wazuh Interface: Fill in the details and copy the Wazuh agent installer.
   2. Windows Powershell: Run the installer with admin privileges.
   3. Verify: Check the Wazuh web interface for the new agent and its active status.
 
-##step-5-generating-and-ingesting-telemetry-data
+## Step 5: Generating and Ingesting Telemetry Data
 
 ### Generating and Ingesting Telemetry Data
   1. Manipulate ossec.conf File on Windows
@@ -209,8 +209,7 @@ Check Service Status:
   - Use ChatGPT to write regex for SHA 256.
   - Use VirusTotal API to check the hash and return the value.
 
-
-##additional-resources
+## additional-resources
 
 ### Additional Resources
   -  Wazuh Documentation
