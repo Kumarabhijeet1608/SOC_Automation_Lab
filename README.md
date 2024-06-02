@@ -184,10 +184,11 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
  ![Elasticsearch](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/11.png)
 
 
-Check Service Status:
+
+### Check the Service Status:
 - Verify the status of Cassandra, Elasticsearch, and The Hive services.
 
-
+ ![Service Status](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/14.png)
 
 
 
