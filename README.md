@@ -126,8 +126,8 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 1. Access The Hive at `http://<thehive_public_ip>:9000`.
 2. Default login credentials:
    ```
-    -Username: `admin@thehive.local`
-    -Password: `secret`     
+    -Username: admin@thehive.local
+    -Password: secret     
 ## Step 3: Configuration
 
 ### Cassandra Database Configuration
