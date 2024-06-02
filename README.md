@@ -240,7 +240,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 ### Configure ossec.conf on Wazuh Manager
   1. Go to the Wazuh terminal and edit the `ossec.conf` file.
 
-25th image .....
+ ![ossec.conf](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/25.png)
 
 ### Update Wazuh Filebeat Configuration
 
@@ -253,12 +253,10 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
       ```bash
          sudo systemctl restart filebeat
       ```
-  4. Go back to Wazuh Dashboard and create an Index.
-
-     
- ### Create Index and Custom Rules in Wazuh Dashboard
-  1. Go to the Wazuh dashboard and create an index.
-  2. Create custom rules by editing the `local_rules.xml` file.
+  4. Go to the Wazuh dashboard and create an index Pattern.
+   ![index_pattern](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/24.png)
+      
+  5. Create custom rules by editing the `local_rules.xml` file.
 ```     
 <!-- Local rules -->
 
@@ -283,18 +281,17 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
   </rule>
 </group>
 ```
-24th image
-
   6.   Go to wazuh-archives-**
-  7.   Search mimikatz
-  27th image 
-  8.  If you don't find anything re-run the `mimikatz` in the windows machine via CLI.
+  7.   Search mimikatz in the search bar of wazuh dashboard
+      ![search](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/27.png)
 
-  9. Herd back to wazuh & grep for mimikatz
+  9.  If you don't find anything re-run the `mimikatz` in the windows machine via CLI.
+
+  10. Herd back to wazuh & grep for mimikatz
      ```bash
         cat archives.json | grep -i mimikatz
      ```
-     
+      ![grep_mimikatz](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/26.png)
 
 ### Rerun Mimikatz and Check Detection
   1. Change the executable file name of Mimikatz and rerun the Mimikatz command in the CLI.
