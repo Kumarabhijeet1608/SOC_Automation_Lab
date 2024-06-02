@@ -51,8 +51,8 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 - **Ubuntu (for Wazuh and The Hive)**: Spin up VMs in the cloud VPS [DigitalOcean](https://cloud.digitalocean.com/).
 
 ### Installation Guides
-- [VM Installation Guide](https://example.com/vm-installation-guide)
-- [Sysmon Installation Guide](https://example.com/sysmon-installation-guide)
+- [VM Installation Guide](https://www.youtube.com/watch?v=nvdnQX9UkMY)
+- [Sysmon Installation Guide](https://www.youtube.com/watch?v=uJ7pv6blyog)
 
 ### Creating Droplets on Digital Ocean
 1. Create droplets for Wazuh and The Hive.
