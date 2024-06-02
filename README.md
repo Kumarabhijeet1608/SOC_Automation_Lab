@@ -23,7 +23,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 
 ### Components
 1. **Windows 10 Client with Wazuh Agent**: Sends telemetry data to the Wazuh Manager.
-2. **Wazuh Manager**: Evaluates telemetry data and triggers alerts.
+2. **Wazuh Manager**: [Wazuh](https://wazuh.com/) is an open source security monitoring solution which collects and analyzes host security data. It is a fork of the older, better known OSSEC project. Evaluate telemetry data and triggers alerts.
 3. **Shuffle**: Handles alerts and creates notifications in The Hive.
 4. **The Hive**: TheHive is a scalable 3-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs, and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly.Acts as a case management system. - The official GitRepo of TheHive is [HERE](https://github.com/TheHive-Project/TheHive)
 5. **SOC Analyst**: Investigates the alerts.
