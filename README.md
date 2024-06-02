@@ -311,7 +311,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
   3. Create Alert in The Hive: Send the details to The Hive to create an alert.
      ![Virustotal](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/37.png)
   5. Email Notification: Send an email to the SOC Analyst to begin the investigation.
-
+    ![Email](https://raw.githubusercontent.com/Kumarabhijeet1608/SOC_Automation_Lab/main/Image%20File/Mail.webp)
 ### Additional Assistance
   - Use ChatGPT to write regex for SHA 256.
   - Use VirusTotal API to check the hash and return the value.
