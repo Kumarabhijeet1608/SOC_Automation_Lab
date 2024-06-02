@@ -220,9 +220,10 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 ## Step 5: Generating and Ingesting Telemetry Data
 
 ### Download Mimikatz
-   1. Download Mimikatz on your Windows machine using CLI with admin privileges.
+   1. Download and Install Mimikatz on your Windows machine using CLI with admin privileges.
       - [Mimikatz](https://github.com/gentilkiwi/mimikatz/releases/tag/2.2.0-20220919)
-
+        
+![mimikatz](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/22.png)
         
 ### Generating and Ingesting Telemetry Data
   1. Manipulate `ossec.conf` File on Windows Machine.
@@ -283,7 +284,8 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 ```
   6.   Go to wazuh-archives-**
   7.   Search mimikatz in the search bar of wazuh dashboard
-      ![search](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/27.png)
+      ![search](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/38.png)
+      ![result](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/27.png)
 
   9.  If you don't find anything re-run the `mimikatz` in the windows machine via CLI.
 
@@ -293,10 +295,6 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
      ```
       ![grep_mimikatz](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/26.png)
 
-### Rerun Mimikatz and Check Detection
-  1. Change the executable file name of Mimikatz and rerun the Mimikatz command in the CLI.
-  2. Check the Wazuh interface for the detection of Mimikatz.
-
 
 
 ## Step 6: Integrating with Shuffle (SOAR)
@@ -304,12 +302,14 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 ### Integrating with Shuffle (SOAR)
 -Connect Wazuh to Shuffle
   1. Use the integration tag in the ossec.conf file to connect Wazuh to Shuffle.
+![Integrate](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/29.png)
 
 ###  Workflow for Mimikatz Alert Handling
-  1. Mimikatz Alert: Sent to Shuffle.
-  2. Shuffle: Receives the alert, extracts the SHA 256 hash, and checks the reputation score with VirusTotal.
-  3.  Create Alert in The Hive: Send the details to The Hive to create an alert.
-  4.  Email Notification: Send an email to the SOC Analyst to begin the investigation.
+  1. Mimikatz Alert: Sent to Shuffle. ![Alert](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/36.png) 
+  2. Shuffle: Receives the alert, extracts the SHA 256 hash, and checks the reputation score with VirusTotal. ![SHA-256](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/30.png)
+     ![Virustotal](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/32.png)
+  3. Create Alert in The Hive: Send the details to The Hive to create an alert.
+  4. Email Notification: Send an email to the SOC Analyst to begin the investigation.
 
 ### Additional Assistance
   - Use ChatGPT to write regex for SHA 256.
