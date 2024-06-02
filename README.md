@@ -128,7 +128,11 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 2. Default login credentials:
    ```
     -Username: admin@thehive.local
-    -Password: secret     
+    -Password: secret
+
+
+
+   
 ## Step 3: Configuration
 
 ### Cassandra Database Configuration
@@ -136,7 +140,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
    ```bash
    sudo nano /etc/cassandra/cassandra.yaml
    
-2. Update the following parameters:
+2. Update the following parameters in the yaml file:
    ```bash
    cluster_name: xyz
    listen_address: <public IP of The Hive>
