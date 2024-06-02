@@ -17,7 +17,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 
 ## Architecture Diagram
 
-![SOC Architecture Diagram](images/architecture_diagram.png)
+![SOC Architecture Diagram](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/Architecture_Dig.png)
 
 ## Step 1: Initial Setup
 
