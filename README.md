@@ -125,12 +125,14 @@ Check Service Status:
 ```
 2. Save the Wazuh API user and password.
 
+#step-4-deploying-a-new-agent
 
 ### Deploying a New Agent
   1. Deploy Agent from Wazuh Interface: Fill in the details and copy the Wazuh agent installer.
   2. Windows Powershell: Run the installer with admin privileges.
   3. Verify: Check the Wazuh web interface for the new agent and its active status.
 
+#step-5-generating-and-ingesting-telemetry-data
 
 ### Generating and Ingesting Telemetry Data
   1. Manipulate ossec.conf File on Windows
@@ -193,6 +195,8 @@ Check Service Status:
   1. Change the executable file name of Mimikatz and rerun the Mimikatz command in the CLI.
   2. Check the Wazuh interface for detection of Mimikatz.
 
+#step-6-integrating-with-shuffle-soar
+
 ### Integrating with Shuffle (SOAR)
 -Connect Wazuh to Shuffle
   1. Use the integration tag in the ossec.conf file to connect Wazuh to Shuffle.
@@ -207,6 +211,8 @@ Check Service Status:
   - Use ChatGPT to write regex for SHA 256.
   - Use VirusTotal API to check the hash and return the value.
 
+
+#additional-resources
 
 ### Additional Resources
   -  Wazuh Documentation
