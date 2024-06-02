@@ -309,7 +309,8 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
   2. Shuffle: Receives the alert, extracts the SHA 256 hash, and checks the reputation score with VirusTotal. ![SHA-256](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/30.png)
      ![Virustotal](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/32.png)
   3. Create Alert in The Hive: Send the details to The Hive to create an alert.
-  4. Email Notification: Send an email to the SOC Analyst to begin the investigation.
+     ![Virustotal](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/37.png)
+  5. Email Notification: Send an email to the SOC Analyst to begin the investigation.
 
 ### Additional Assistance
   - Use ChatGPT to write regex for SHA 256.
