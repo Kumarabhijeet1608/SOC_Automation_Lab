@@ -129,10 +129,9 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
    ```
     -Username: admin@thehive.local
     -Password: secret
+   ```
 
-
-
-   
+  
 ## Step 3: Configuration
 
 ### Cassandra Database Configuration
