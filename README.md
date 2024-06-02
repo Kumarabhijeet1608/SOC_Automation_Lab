@@ -212,7 +212,8 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
   1. Deploy Agent from Wazuh Interface: Fill in the details and copy the Wazuh agent installer.
   2. Windows Powershell: Paste the Wazuh agent installer & Run the installer with admin privileges.
   3. Verify: Check the Wazuh web interface for the new agent and its active status.
-
+     
+ ![Active Status](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/15.png)
 
 
 
