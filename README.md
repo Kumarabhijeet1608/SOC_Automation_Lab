@@ -156,7 +156,6 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 ### Elasticsearch Configuration
 1. Edit the Elasticsearch configuration file:
    ```bash
-    Copy code
     sudo nano /etc/elasticsearch/elasticsearch.yml
 
 2. Update the following parameters:
