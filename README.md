@@ -81,7 +81,11 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
       ![web interface Credentials](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/4.png)
 
 
+
+
+
 ### The Hive Setup
+ ![The Hive Setup](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/TheHive.png)
 1. **Upgrade and Update**: Ensure your system is up to date via CLI.
     ```bash
        apt-get update && apt-get upgrade -y  
