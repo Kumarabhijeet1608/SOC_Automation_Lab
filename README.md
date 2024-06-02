@@ -49,6 +49,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 ### VM Setup
 - **Windows 10**: Install Sysmon.
 - **Ubuntu (for Wazuh and The Hive)**: Spin up VMs in the cloud VPS [DigitalOcean](https://cloud.digitalocean.com/).
+- Use the [LINK](https://m.do.co/c/e2ce5a05f701) <- To get a free $200 credit for the first 60 days with Digital Ocean
 
 ### Installation Guides
 - [VM Installation Guide](https://www.youtube.com/watch?v=nvdnQX9UkMY)
