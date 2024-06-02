@@ -77,7 +77,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
          sudo tar -xvf wazuh-install-files.tar
    
 4. **Save Credentials**: Record the username and password for the web interface.
-   [web interface Credentials](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/4.png)
+      ![web interface Credentials](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/4.png)
 
 
 ### The Hive Setup
