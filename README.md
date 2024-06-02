@@ -131,8 +131,11 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
     -Password: secret
    ```
 
+
+
+
   
-## Step 3: Configuration
+## Step 3: Configuration in The Hive
 
 ### Cassandra Database Configuration
 1. Edit the Cassandra configuration file:
@@ -152,6 +155,8 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
    sudo rm -rf /var/lib/cassandra/*
    sudo systemctl start cassandra.service
    sudo systemctl status cassandra.service
+
+
 
 ### Elasticsearch Configuration
 1. Edit the Elasticsearch configuration file:
@@ -175,8 +180,12 @@ Check Service Status:
 - Verify the status of Cassandra, Elasticsearch, and The Hive services.
 
 
+
+
+
+
    
-### Extract and Save Passwords:
+### Extract and Save Passwords from Wazuh:
 1. Extract passwords:
   ```bash
   ls
@@ -186,22 +195,29 @@ Check Service Status:
 ```
 2. Save the Wazuh API user and password.
 
+
+
 ## Step 4: Deploying a New Agent
 
 ### Deploying a New Agent
   1. Deploy Agent from Wazuh Interface: Fill in the details and copy the Wazuh agent installer.
-  2. Windows Powershell: Run the installer with admin privileges.
+  2. Windows Powershell: Paste the Wazuh agent installer & Run the installer with admin privileges.
   3. Verify: Check the Wazuh web interface for the new agent and its active status.
+
+
+
 
 ## Step 5: Generating and Ingesting Telemetry Data
 
 ### Generating and Ingesting Telemetry Data
-  1. Manipulate ossec.conf File on Windows
+  1. Manipulate ossec.conf File on Windows Machine.
   2. Go to your Windows machine and search for ossec-agent in Program Files.
   3. Open the ossec.conf file using admin privileges.
      
 ### Download Mimikatz
    1. Download Mimikatz on your Windows machine using CLI with admin privileges.
+      ```bash
+         [Mimikatz](https://github.com/gentilkiwi/mimikatz/releases/tag/2.2.0-20220919)
 
 ### Configure ossec.conf on Wazuh Manager
   1. Go to the Wazuh terminal and edit the `ossec.conf` file.
