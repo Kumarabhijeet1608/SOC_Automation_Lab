@@ -216,8 +216,7 @@ Check Service Status:
      
 ### Download Mimikatz
    1. Download Mimikatz on your Windows machine using CLI with admin privileges.
-      ```bash
-         [Mimikatz](https://github.com/gentilkiwi/mimikatz/releases/tag/2.2.0-20220919)
+      - [Mimikatz](https://github.com/gentilkiwi/mimikatz/releases/tag/2.2.0-20220919)
 
 ### Configure ossec.conf on Wazuh Manager
   1. Go to the Wazuh terminal and edit the `ossec.conf` file.
