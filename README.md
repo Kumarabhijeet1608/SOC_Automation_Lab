@@ -37,19 +37,17 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 ## Step 2: Setting Up the Environment
 
 ### Requirements
-- **Windows 10 with Sysmon Installed**
+- **Windows 10 with Sysmon Installed in it**
 - **VPS on Digital Ocean**: Hosts Wazuh Server and The Hive Server.
+- **Ubuntu (for Wazuh and The Hive)**: Spin up VMs in the cloud VPS [DigitalOcean](https://cloud.digitalocean.com/).
+- Use the [LINK](https://m.do.co/c/e2ce5a05f701) <- To get a free $200 credit for the first 60 days with Digital Ocean
+
 
 ### Tools Description
 1. **Sysmon**: A Windows system service and device driver that logs system activity to the Windows event log.
 2. **Wazuh**: An open-source cybersecurity platform that integrates SIEM and XDR capabilities, providing security analytics, intrusion detection, and incident response.
    - **Components**: Indexer, Server, Dashboard.
 3. **The Hive**: An open-source security incident response platform used as a case management system.
-
-### VM Setup
-- **Windows 10**: Install Sysmon.
-- **Ubuntu (for Wazuh and The Hive)**: Spin up VMs in the cloud VPS [DigitalOcean](https://cloud.digitalocean.com/).
-- Use the [LINK](https://m.do.co/c/e2ce5a05f701) <- To get a free $200 credit for the first 60 days with Digital Ocean
 
 ### Installation Guides
 - [VM Installation Guide](https://www.youtube.com/watch?v=nvdnQX9UkMY)
