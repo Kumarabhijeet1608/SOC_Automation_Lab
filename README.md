@@ -228,14 +228,15 @@ Check Service Status:
      
   2.  Navigate to the logs:
       ```bash
-    cd /var/ossec/logs/archives
-    ls
+          cd /var/ossec/logs/archives
+          ls
     
 ### Update Wazuh Filebeat Configuration
+
   1.  Make changes in the Wazuh Filebeat configuration.
   2.  Restart Filebeat:
       ```bash
-      sudo systemctl restart filebeat
+         sudo systemctl restart filebeat
 
 ### Create Index and Custom Rules in Wazuh Dashboard
   1. Go to the Wazuh dashboard and create an index.
