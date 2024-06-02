@@ -58,14 +58,78 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 1. Create droplets for Wazuh and The Hive.
 2. Set up the firewall rules to allow necessary traffic.
 
-### Wazuh and The Hive Setup
+
+
+### Wazuh Setup
 1. **Upgrade and Update**: Ensure your system is up to date via CLI.
+    ```bash
+       apt-get update && apt-get upgrade -y  
 2. **Wazuh Installation**: Follow the provided instructions.
+   ```bash
+      Specifications
+      RAM: 8GB+
+      HDD: 50GB+
+      OS: Ubuntu 22.04 LTS
+
+      Install Wazuh 4.7
+      curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
+
+      Extract Wazuh Credentials
+      sudo tar -xvf wazuh-install-files.tar
+   
 3. **Save Credentials**: Record the username and password for the web interface.
 
-### The Hive Setup
-- Prepare space for The Hive.
 
+
+### The Hive Setup
+1. **Upgrade and Update**: Ensure your system is up to date via CLI.
+    ```bash
+       apt-get update && apt-get upgrade -y  
+2. **The Hive Installation**: Follow the provided instructions.
+   ```bash
+      Specifications
+      RAM: 8GB+ (Recommend 16 GB)
+      HDD: 50+ GB
+      OS: Ubuntu 22.04 LTS
+
+      Installing TheHive 5
+2. Dependences
+   ```bash
+      apt install wget gnupg apt-transport-https git ca-certificates ca-certificates-java curl  software-properties-common python3-pip lsb-release
+3. Install Java
+   ```bash
+      wget -qO- https://apt.corretto.aws/corretto.key | sudo gpg --dearmor  -o /usr/share/keyrings/corretto.gpg
+      echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" |  sudo tee -a /etc/apt/sources.list.d/corretto.sources.list
+      sudo apt update
+      sudo apt install java-common java-11-amazon-corretto-jdk
+      echo JAVA_HOME="/usr/lib/jvm/java-11-amazon-corretto" | sudo tee -a /etc/environment 
+      export JAVA_HOME="/usr/lib/jvm/java-11-amazon-corretto"
+4. Install Cassandra
+   ```bash
+      wget -qO -  https://downloads.apache.org/cassandra/KEYS | sudo gpg --dearmor  -o /usr/share/keyrings/cassandra-archive.gpg
+      echo "deb [signed-by=/usr/share/keyrings/cassandra-archive.gpg] https://debian.cassandra.apache.org 40x main" |  sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
+      sudo apt update
+      sudo apt install cassandra
+5. Install ElasticSearch
+   ```bash
+      wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch |  sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
+      sudo apt-get install apt-transport-https
+      echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main" |  sudo tee /etc/apt/sources.list.d/elastic-7.x.list
+      sudo apt update
+      sudo apt install elasticsearch
+
+6. Install The Hive
+   ```bash
+      wget -O- https://archives.strangebee.com/keys/strangebee.gpg | sudo gpg --dearmor -o /usr/share/keyrings/strangebee-archive-keyring.gpg
+      echo 'deb [signed-by=/usr/share/keyrings/strangebee-archive-keyring.gpg] https://deb.strangebee.com thehive-5.2 main' | sudo tee -a /etc/apt/sources.list.d/strangebee.list
+      sudo apt-get update
+      sudo apt-get install -y thehive
+
+ ### The Hive Web Interface
+1. Access The Hive at `http://<thehive_public_ip>:9000`.
+2. Default login credentials:
+    -Username: `admin@thehive.local`
+    -Password: `secret`     
 ## Step 3: Configuration
 
 ### Cassandra Database Configuration
@@ -109,11 +173,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 Check Service Status:
 - Verify the status of Cassandra, Elasticsearch, and The Hive services.
 
-### The Hive Web Interface
-1. Access The Hive at `http://<thehive_public_ip>:9000`.
-2. Default login credentials:
-    -Username: `admin@thehive.local`
-    -Password: `secret`
+
    
 ### Extract and Save Passwords:
 1. Extract passwords:
