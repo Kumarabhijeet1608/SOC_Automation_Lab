@@ -55,6 +55,7 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 
 ### Creating Droplets on Digital Ocean
 1. Create droplets for Wazuh and The Hive.
+   ![droplets for Wazuh and The Hive](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/8.png)
 2. Set up the firewall rules to allow necessary traffic.
 
 
