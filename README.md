@@ -219,6 +219,12 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 
 ## Step 5: Generating and Ingesting Telemetry Data
 
+### Download Mimikatz
+   1. Download Mimikatz on your Windows machine using CLI with admin privileges.
+      - [Mimikatz](https://github.com/gentilkiwi/mimikatz/releases/tag/2.2.0-20220919)
+      22nd img
+
+        
 ### Generating and Ingesting Telemetry Data
   1. Manipulate `ossec.conf` File on Windows Machine.
   2. Search your Windows machine for `ossec-agent` in Program Files.
@@ -226,32 +232,31 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 
  ![ossec.conf](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/17.png)
 
-     
-### Download Mimikatz
-   1. Download Mimikatz on your Windows machine using CLI with admin privileges.
-      - [Mimikatz](https://github.com/gentilkiwi/mimikatz/releases/tag/2.2.0-20220919)
+  4. Go back to Wazuh Dashboard.
+  5. Under Events
+  6. There is an Alert Index
+  7. Search for Sysmon Events
 
 ### Configure ossec.conf on Wazuh Manager
   1. Go to the Wazuh terminal and edit the `ossec.conf` file.
 
-### Restart Wazuh Manager
-  1. Restart the Wazuh Manager:
-      ```bash
-     sudo systemctl restart wazuh-manager.service
-     
-  2.  Navigate to the logs:
-      ```bash
-          cd /var/ossec/logs/archives
-          ls
-    
+25th image .....
+
 ### Update Wazuh Filebeat Configuration
 
   1.  Make changes in the Wazuh Filebeat configuration.
-  2.  Restart Filebeat:
+    ```bash
+      `nano /etc/filebeat/filebeat.yml`
+  2. There you need to set `archives`: `enabled`: `true`     
+      
+  3.  Restart Filebeat:
       ```bash
          sudo systemctl restart filebeat
+      ```
+  4. Go back to Wazuh Dashboard and create an Index.
 
-### Create Index and Custom Rules in Wazuh Dashboard
+     
+ ### Create Index and Custom Rules in Wazuh Dashboard
   1. Go to the Wazuh dashboard and create an index.
   2. Create custom rules by editing the `local_rules.xml` file.
 ```     
@@ -278,11 +283,22 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
   </rule>
 </group>
 ```
+24th image
+
+  6.   Go to wazuh-archives-**
+  7.   Search mimikatz
+  27th image 
+  8.  If you don't find anything re-run the `mimikatz` in the windows machine via CLI.
+
+  9. Herd back to wazuh & grep for mimikatz
+     ```bash
+        cat archives.json | grep -i mimikatz
+     ```
+     
 
 ### Rerun Mimikatz and Check Detection
   1. Change the executable file name of Mimikatz and rerun the Mimikatz command in the CLI.
-  2. Check the Wazuh interface for detection of Mimikatz.
-
+  2. Check the Wazuh interface for the detection of Mimikatz.
 
 
 
