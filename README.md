@@ -13,8 +13,8 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 - [Step 5: Generating and Ingesting Telemetry Data](#step-5-generating-and-ingesting-telemetry-data)
 - [Step 6: Integrating with Shuffle (SOAR)](#step-6-integrating-with-shuffle-soar)
 - [Additional Resources](#additional-resources)
-- [Conclusion](#conclusion)
-- 
+
+
 ## Architecture Diagram
 
 ![SOC Architecture Diagram](images/architecture_diagram.png)
