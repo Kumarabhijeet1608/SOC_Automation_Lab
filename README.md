@@ -270,7 +270,10 @@ Check Service Status:
   1. Change the executable file name of Mimikatz and rerun the Mimikatz command in the CLI.
   2. Check the Wazuh interface for detection of Mimikatz.
 
-##step-6-integrating-with-shuffle-soar
+
+
+
+## Step 6: Integrating with Shuffle (SOAR)
 
 ### Integrating with Shuffle (SOAR)
 -Connect Wazuh to Shuffle
