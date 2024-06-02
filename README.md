@@ -220,9 +220,12 @@ One effective approach is to build a fully automated SOC home lab, empowering cy
 ## Step 5: Generating and Ingesting Telemetry Data
 
 ### Generating and Ingesting Telemetry Data
-  1. Manipulate ossec.conf File on Windows Machine.
-  2. Go to your Windows machine and search for ossec-agent in Program Files.
-  3. Open the ossec.conf file using admin privileges.
+  1. Manipulate `ossec.conf` File on Windows Machine.
+  2. Search your Windows machine for `ossec-agent` in Program Files.
+  3. Open the `ossec.conf` file using admin privileges.
+
+ ![ossec.conf](https://github.com/Kumarabhijeet1608/SOC_Automation_Lab/blob/main/Image%20File/17.png)
+
      
 ### Download Mimikatz
    1. Download Mimikatz on your Windows machine using CLI with admin privileges.
